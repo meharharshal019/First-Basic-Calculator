@@ -91,6 +91,6 @@ http://127.0.0.1:5000
 * Unit Converter
 
 ## Author
-Harshal
+Harshal Mehar
 
 Built while learning Flask, Python, HTML, CSS, and JavaScript.
