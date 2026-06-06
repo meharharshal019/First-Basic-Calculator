@@ -2,7 +2,7 @@
 
 # 🧮 Smart Calculator
 
-A modern calculator web application built using **Python, Flask, HTML, CSS, and JavaScript**.
+A modern basic calculator web application built using **Python, Flask, HTML, CSS, and JavaScript**.
 
 ## 🚀 Features
 
