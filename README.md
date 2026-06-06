@@ -1,4 +1,4 @@
-# First-Grade-Calculator
+# First-Basic-Calculator
 
 # 🧮 Smart Calculator
 
