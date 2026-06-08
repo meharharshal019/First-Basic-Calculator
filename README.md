@@ -77,7 +77,7 @@ python app.py
 ```text
 http://127.0.0.1:5000
 ```
-##Screen-shot:
+##Screenshot:
 <img width="1056" height="915" alt="image" src="https://github.com/user-attachments/assets/6e1f1b3c-23da-4a41-a368-db6fcd6810e3" />
 
 
