@@ -1,49 +1,169 @@
-let display = document.getElementById("display");
-let history = document.getElementById("history");
-
-function append(value){
-display.value += value;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
-function clearDisplay(){
-display.value = "";
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:
+linear-gradient(
+135deg,
+#0f172a,
+#1e293b,
+#334155
+);
 }
 
-function calculate(){
+.calculator{
 
-try{
+width:400px;
 
-let expression = display.value;
+padding:25px;
 
-let result = eval(expression);
+border-radius:25px;
 
-let item = document.createElement("li");
+background:rgba(255,255,255,0.08);
 
-item.textContent =
-expression + " = " + result;
+backdrop-filter:blur(15px);
 
-history.prepend(item);
-
-display.value = result;
+box-shadow:
+0 0 20px rgba(59,130,246,.5),
+0 0 40px rgba(59,130,246,.3),
+0 0 80px rgba(59,130,246,.2);
 }
 
-catch{
-
-display.value = "Error";
-}
-}
-
-function updateTime(){
-
-let now = new Date();
-
-document.getElementById("datetime")
-.innerHTML =
-now.toLocaleDateString() +
-"<br>" +
-now.toLocaleTimeString();
+h1{
+text-align:center;
+color:white;
+margin-bottom:5px;
 }
 
-setInterval(updateTime,1000);
+.subtitle{
+text-align:center;
+color:#cbd5e1;
+margin-bottom:15px;
+}
 
-updateTime();
+#datetime{
+text-align:center;
+color:#94a3b8;
+margin-bottom:15px;
+font-size:14px;
+}
+
+#display{
+
+width:100%;
+height:80px;
+
+border:none;
+outline:none;
+
+font-size:2rem;
+text-align:right;
+
+padding:15px;
+
+border-radius:15px;
+
+background:#020617;
+color:white;
+
+margin-bottom:20px;
+}
+
+.buttons{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+
+gap:12px;
+}
+
+button{
+
+height:70px;
+
+border:none;
+border-radius:15px;
+
+font-size:1.5rem;
+
+cursor:pointer;
+
+background:#1e293b;
+color:white;
+
+transition:.3s;
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 15px rgba(59,130,246,.6);
+}
+
+.operator{
+background:#7c3aed;
+}
+
+.green{
+background:#16a34a;
+}
+
+.red{
+background:#dc2626;
+}
+
+.zero{
+grid-column:span 2;
+}
+
+.history-box{
+
+margin-top:20px;
+
+background:#111827;
+
+padding:15px;
+
+border-radius:15px;
+}
+
+.history-box h3{
+
+color:white;
+margin-bottom:10px;
+}
+
+.history-box ul{
+
+list-style:none;
+max-height:150px;
+overflow-y:auto;
+}
+
+.history-box li{
+
+color:#cbd5e1;
+padding:5px 0;
+border-bottom:1px solid #334155;
+}
+
+.footer{
+
+text-align:center;
+
+margin-top:15px;
+
+color:#94a3b8;
+font-size:12px;
+}
