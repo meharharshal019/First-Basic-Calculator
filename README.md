@@ -121,4 +121,4 @@ http://127.0.0.1:5000
 
 **Harshal Mehar**
 
-Built as a learning project to explore web development using Flask and front-end technologies.
+Built as a learning project while learning python,flask to explore developing a web app.
